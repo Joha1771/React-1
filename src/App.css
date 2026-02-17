@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+.app {
+  @apply flex flex-col items-center justify-center pt-[250px] gap-[20px];
+}
+.app-img {
+  @apply w-[200px];
+}
+
+.app-title {
+  @apply text-4xl font-bold text-[white];
+}
+
+.app-desc {
+  @apply text-3xl font-medium text-[white];
+}
+
+.app-button1 {
+  @apply py-[10px] px-[25px] text-2xl text-[#404756] bg-[#58c4dc] rounded-full flex items-center justify-center font-medium;
+}
+.app-button2 {
+  @apply py-[10px] px-[25px] text-2xl text-[white] rounded-full flex items-center justify-center font-medium border-1 border-[#3f4655];
+}
+.app-button-wrapper {
+  @apply flex items-center justify-center gap-[10px];
+}
