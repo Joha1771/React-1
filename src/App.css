@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 .app {
-  @apply flex flex-col items-center justify-center pt-[250px] gap-[20px];
+  @apply flex flex-col items-center justify-center pt-[100px] gap-[50px];
 }
 .app-img {
   @apply w-[200px];
@@ -16,11 +16,40 @@
 }
 
 .app-button1 {
-  @apply py-[10px] px-[25px] text-2xl text-[#404756] bg-[#58c4dc] rounded-full flex items-center justify-center font-medium;
+  @apply py-[10px] px-[25px] text-2xl text-[#404756] bg-[#58c4dc] rounded-full flex items-center justify-center font-medium cursor-pointer;
 }
 .app-button2 {
-  @apply py-[10px] px-[25px] text-2xl text-[white] rounded-full flex items-center justify-center font-medium border-1 border-[#3f4655];
+  @apply py-[10px] px-[25px] text-2xl text-[white] rounded-full flex items-center justify-center font-medium border-1 border-[#3f4655] cursor-pointer;
 }
 .app-button-wrapper {
   @apply flex items-center justify-center gap-[10px];
+}
+.navbar-search {
+  @apply flex gap-[10px] rounded-full px-[20px] py-[5px]   items-center bg-[#333a45] max-w-[700px] w-full;
+}
+
+.navbar-search-wrapper {
+  @apply flex items-center justify-center gap-[30px] text-white font-bold;
+}
+.navbar-container {
+  @apply container lg:px-[35px] xl:px-[50px] px-4 py-6 mx-auto max-w-[1900px] text-[white] flex items-center justify-between;
+}
+
+.nav-list {
+  @apply flex items-center justify-center gap-[40px];
+}
+.search {
+  @apply py-[10px] w-full;
+}
+
+.text {
+  @apply text-[white] font-bold text-2xl py-[10px] px-[30px] rounded-full border-1 border-gray-600 cursor-pointer;
+}
+
+.app-title2 {
+  @apply font-bold text-4xl text-[white] border-1 border-gray-600 py-[20px] px-[40px] flex items-center justify-center;
+}
+
+.app-buttons {
+  @apply flex flex-col items-center justify-center gap-[20px];
 }
