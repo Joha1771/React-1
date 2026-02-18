@@ -1,11 +1,10 @@
-import React, { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import "./App.css";
 import Button from "./Button";
 import Navbar from "./Navbar";
+import Count from "./Count";
 
 const App = () => {
-  let [count, setCount] = useState(0);
   return (
     <>
       <Navbar />
@@ -19,33 +18,8 @@ const App = () => {
           <Button className="app-button1" title="Learn React" />
           <Button className="app-button2" title="API Reference" />
         </div>
-        <div className="app-buttons">
-          <h1 className="app-title2 ">{count}</h1>
-          <div className="app-button-wrapper ">
-            <button
-              className="text"
-              onClick={() => {
-                setCount(++count);
-                {
-                  if (count > 33) {
-                    setCount(0);
-                  }
-                }
-              }}
-            >
-              Count
-            </button>
-            <button
-              className="text"
-              onClick={() => {
-                setCount(0);
-              }}
-            >
-              Delete
-            </button>
-          </div>
-        </div>
       </div>
+      <Count />
     </>
   );
 };
